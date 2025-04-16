@@ -2,6 +2,8 @@ package com.Food.Food.Delivery.Model;
 
 import jakarta.persistence.*;
 
+
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -10,25 +12,27 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)  // Ensuring it's not null
     private String username;
-
-    @Column(nullable = false)
     private String lname;
-
-    @Column(unique = true, nullable = false)
     private String email;
-
-    @Column(nullable = false)
     private String password;
 
-    public User() {}
-
-    public User(String username, String lname, String email, String password) {
-        this.username = username;
-        this.lname = lname;
+    public User(String email, String lname, String password, String username) {
         this.email = email;
+        this.lname = lname;
         this.password = password;
+        this.username = username;
+    }
+    public User(){
+
+    }
+    // Getters and setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getUsername() {

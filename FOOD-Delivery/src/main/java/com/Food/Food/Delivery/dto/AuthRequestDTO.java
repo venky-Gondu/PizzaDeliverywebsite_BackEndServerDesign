@@ -1,8 +1,7 @@
 package com.Food.Food.Delivery.dto;
-// DTO Client <-> Controller (DTOs) <-> Service (Domain Models) <-> Repository (Entities)
-// helps to binds the external view data with internal data view .
+
 public class AuthRequestDTO {
-    private String username; // Changed from 'name' to 'username' to match User entity
+    private String username;
     private String lname;
     private String email;
     private String password;
@@ -16,11 +15,11 @@ public class AuthRequestDTO {
         this.password = password;
     }
 
-    public String getUsername() { // Changed from 'getName' to 'getUsername'
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(String username) { // Changed from 'setName' to 'setUsername'
+    public void setUsername(String username) {
         this.username = username;
     }
 
