@@ -135,7 +135,7 @@ Example payload for placing an order:
 
 For any queries or collaboration:  
 **Gondu Venkatesh**  
-📧 venkatesh.gondu108@gmail.com  _(replace with your actual email)_
+📧 venkatesh.gondu108@gmail.com 
 
 ---
 
